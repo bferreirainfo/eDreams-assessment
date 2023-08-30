@@ -44,7 +44,7 @@
             <groupId>fish.payara.cloud.connectors.kafka</groupId>
             <artifactId>kafka-jca-api</artifactId>
         </dependency>
-
+        
         <dependency>
             <groupId>com.odigeo.interview.coding</groupId>
             <artifactId>battleship-api</artifactId>
@@ -60,6 +60,11 @@
             <artifactId>mockito-all</artifactId>
         </dependency>
 
+        <dependency>
+        	<groupId>assessement</groupId>
+        	<artifactId>test</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

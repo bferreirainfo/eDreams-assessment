@@ -86,18 +86,29 @@
             </dependency>
 
             <dependency>
-                <groupId>com.odigeo.interview.coding</groupId>
-                <artifactId>battleship-api</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-client</artifactId>
                 <version>${resteasy-client.version}</version>
             </dependency>
 
-
+	 		<dependency>
+	            <groupId>com.odigeo.interview.coding</groupId>
+	            <artifactId>battleship-api</artifactId>
+	            <version>${project.version}</version>
+	        </dependency>
+	        
+	         <dependency>
+	            <groupId>com.odigeo.interview.coding</groupId>
+	            <artifactId>battleship-service</artifactId>
+	            <version>${project.version}</version>
+        	</dependency>
+        	
+        	<dependency>
+	            <groupId>com.odigeo.interview.coding</groupId>
+	            <artifactId>battleship-computer-service</artifactId>
+	            <version>${project.version}</version>
+        	</dependency>
+        
         </dependencies>
     </dependencyManagement>
 

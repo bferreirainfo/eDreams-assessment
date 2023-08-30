@@ -5,6 +5,7 @@ import com.odigeo.interview.coding.battleshipapi.contract.GameFireCommand;
 import com.odigeo.interview.coding.battleshipapi.contract.GameFireResponse;
 import com.odigeo.interview.coding.battleshipapi.contract.GameJoinCommand;
 import com.odigeo.interview.coding.battleshipapi.contract.GameStartCommand;
+import com.odigeo.interview.coding.battleshipapi.contract.ShipDeployment;
 import com.odigeo.interview.coding.battleshipapi.event.GameCreatedEvent;
 import com.odigeo.interview.coding.battleshipapi.event.GameFireEvent;
 import com.odigeo.interview.coding.battleshipservice.exception.GameFinishedException;
@@ -96,9 +97,14 @@ public class GameService {
         repository.saveOrUpdateGame(game);
     }
 
-    private List<Ship> mapShipsDeployment(List<DeployShipsCommand.ShipDeployment> shipDeployments) {
+    private List<Ship> mapShipsDeployment(Object shipsDeploy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private List<Ship> mapShipsDeployment(List<ShipDeployment> shipDeployments) {
         List<Ship> ships = new ArrayList<>();
-        for (DeployShipsCommand.ShipDeployment shipDeployment: shipDeployments) {
+        for (ShipDeployment shipDeployment: shipDeployments) {
             try {
                 Ship ship = ShipType.getByTypeName(shipDeployment.getShipType()).newInstance();
                 ship.setCoordinates(shipDeployment.getCoordinates().stream()

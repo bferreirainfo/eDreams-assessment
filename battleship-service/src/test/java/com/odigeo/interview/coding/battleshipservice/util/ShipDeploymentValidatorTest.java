@@ -1,14 +1,14 @@
 package com.odigeo.interview.coding.battleshipservice.util;
 
-import com.odigeo.interview.coding.battleshipservice.exception.ShipDeploymentException;
-import com.odigeo.interview.coding.battleshipservice.model.ship.Ship;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import java.util.List;
 
-import static org.mockito.MockitoAnnotations.initMocks;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.odigeo.interview.coding.battleshipservice.exception.ShipDeploymentException;
+import com.odigeo.interview.coding.battleshipservice.model.ship.Ship;
 
 public class ShipDeploymentValidatorTest {
 

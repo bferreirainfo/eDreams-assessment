@@ -10,21 +10,14 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>battleship-computer-service</artifactId>
+    <artifactId>battleship-api</artifactId>
     <packaging>war</packaging>
 
     <properties>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <jboss-ejb3-ext-api.version>2.3.0.Final</jboss-ejb3-ext-api.version>
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.jboss.ejb3</groupId>
-            <artifactId>jboss-ejb3-ext-api</artifactId>
-            <version>${jboss-ejb3-ext-api.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>javax</groupId>
@@ -54,7 +47,7 @@
         
         <dependency>
             <groupId>com.odigeo.interview.coding</groupId>
-            <artifactId>battleship-api</artifactId>
+            <artifactId>battleship-service</artifactId>
         </dependency>
 
         <dependency>
@@ -67,17 +60,10 @@
             <artifactId>mockito-all</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-client</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-
     </dependencies>
 
     <build>
-        <finalName>battleship-computer-service</finalName>
+        <finalName>battleship-api</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
